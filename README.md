@@ -1,6 +1,6 @@
 # Fall Detection con Rete Neurale Convoluzionale 
 
-La fall detection è importante perchè...
+Attenzione: progetto ancora in fase di sviluppo
 
 ---
 ## Tabella dei contenuti
@@ -23,4 +23,5 @@ UR-Fall e gli altri
 ## Fallnet
 
 ## Autore
+- Stefano Perniola
 
