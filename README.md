@@ -20,17 +20,14 @@
 
 # 📝 Presentazione del progetto <a name = "panoramica"></a>
 
-<table style="width:25%">
+<table>
   <tr>
     <img align="left" src="images/fall_pavimentale.png" height="300" width="160">
     <img align="left" src="images/fall_frontale.png" height="300" width="160">
   </tr>
-</table>
-
-
 Si vuole realizzare un ...
 
-<img align="right" src="JustMeet-Frontend/components/images/SCOPRI EVENTI.jpeg" height="300">
+
 
 ...
 
