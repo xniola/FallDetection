@@ -6,10 +6,7 @@
 
 
 <p align="center">
-<img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
-<img src="https://forthebadge.com/images/badges/built-for-raspberry.svg"/>
     <b>FallDetection</b> è un progetto di <b>Deep Learning</b> realizzato in <b>Google Colab</b> per la tesi di laurea magistrale in Ingegneria Informatica.
-    <br><br><b>
 </b></p>
 
 # 📔 Tabella dei contenuti
@@ -25,10 +22,8 @@
 
 <table style="width:25%">
   <tr>
-    <img align="left" src="JustMeet-Frontend/components/images/INTRO.jpeg" height="300" width="160">
-    <img align="left" src="JustMeet-Frontend/components/images/INTRO2.jpeg" height="300" width="160">
-    <img align="left" src="JustMeet-Frontend/components/images/INTRO3.jpeg" height="300" width="160">
-    <img align="left" src="JustMeet-Frontend/components/images/INTRO4.jpeg" height="300" width="160">
+    <img align="left" src="images/fall_pavimentale.png" height="300" width="160">
+    <img align="left" src="images/fall_frontale.png" height="300" width="160">
   </tr>
 </table>
 
