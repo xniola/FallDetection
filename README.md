@@ -22,8 +22,8 @@
 
 <table>
   <tr>
-    <img align="left" src="images/fall_pavimentale.png" height="300" width="160">
-    <img align="left" src="images/fall_frontale.png" height="300" width="160">
+    <img align="left" src="images/fall_pavimentale.png">
+    <img align="left" src="images/fall_frontale.png">
   </tr>
 Si vuole realizzare un ...
 
