@@ -7,9 +7,10 @@
 
 <p align="center">
     <b>FallDetection</b> è un progetto di <b>Deep Learning</b> realizzato in <b>Google Colab</b> per la tesi di laurea magistrale in Ingegneria Informatica.
-   Per dettagli maggiori sui temi e metodologie sviluppate nel progetto, si consiglia di consultare l'elaborato scritto presente in questo repository: [FallDetection.pdf](https://github.com/xniola/FallDetection/blob/main/FallDetection.pdf)
 </b></p>
 
+ Per dettagli maggiori circa i temi e le metodologie sviluppate nel progetto, si consiglia di consultare l'elaborato scritto presente in questo repository: [FallDetection.pdf](https://github.com/xniola/FallDetection/blob/main/FallDetection.pdf)
+ 
 # 📔 Tabella dei contenuti
 
 - [Presentazione del progetto](#panoramica)
