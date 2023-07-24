@@ -25,16 +25,32 @@
     <img align="left" src="images/fall_pavimentale.png">
     <img align="left" src="images/fall_frontale.png">
   </tr>
-Si vuole realizzare un ...
-
-
-
-...
+L’obiettivo di questa tesi è quello di costruire un sistema affidabile
+per la rilevazione delle cadute basato su visione. La definizione del
+problema è molto semplice. Si tratta di cercare di capire quando
+una persona sta cadendo o è caduta. Nonostante il concetto
+sia molto semplice, nella realtà dei fatti però per un sistema
+artificiale può essere complessa l’interpretazione della posa delle
+persone, in quanto queste possono compiere azioni apparentemente
+sospette ma che non hanno niente a che fare con una caduta (ad
+esempio abbassarsi per terra per raccogliere un oggetto, sdraiarsi
+sul letto, sedersi per terra e cosi via). L’attività che rileva le
+cadute si chiama fall detection ed è una tecnologia che monitora i
+movimenti di una persona, rileva eventuali cadute che si verificano
+ed eventualmente genera un allarme. A seguito dell’identificazione
+dell’evento, si può avvisare l’operatore sanitario o l’assistente della
+persona mediante smartphone. I sistemi di fall detection non sono
+limitati solo alle persone anziane. Possono anche essere utilizzati
+per proteggere atleti, lavoratori o chiunque sia a maggior rischio di
+caduta. Le telecamere possono avere un posizionamento frontale
+rispetto alla posizione della stanza, oppure possono essere poste
+sul soffitto, in modo tale da aquisire la pianta dell’edificio che si
+intende monitorare. 
 
 
 # 🧰 Tecnologie di base <a name = "tecno"></a>
 
-<img align="left" src="JustMeet-Frontend/components/images/HOMEPAGE.jpeg" height="300">
+<img align="left" src="images/HOMEPAGE.jpeg" height="300">
 
 Il lato frontend dell’applicativo...
 
