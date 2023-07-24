@@ -1,5 +1,5 @@
 <p align="center">
-   Un sistema camera-based per la fall detection in ambienti indoor
+   <b>Un sistema camera-based per la fall detection in ambienti indoor</b>
 </p>
 
 ---
@@ -13,9 +13,6 @@
 
 - [Presentazione del progetto](#panoramica)
 - [Tecnologie di base](#tecno)
-- [Test eseguiti](#test)
-- [Workflow Iterazioni](#workflow)
-- [Obiettivi futuri](#obiettivi)
 - [Autore](#autore)
 
 # 📝 Presentazione del progetto <a name = "panoramica"></a>
@@ -50,57 +47,83 @@ intende monitorare.
 
 # 🧰 Tecnologie di base <a name = "tecno"></a>
 
-<img align="left" src="images/HOMEPAGE.jpeg" height="300">
+<img align="left" src="images/fallnet.png" height="300">
 
-Il lato frontend dell’applicativo...
+La **fallnet** è stata pensata come una rete neurale convoluzionale(CNN).
+Il modello viene utilizzato per l’elaborazione delle immagini e la
+classificazione delle stesse in maniera indipendente l’una dall’altra.
+La fallnet utilizza una serie di filtri che scorrono sull’immagine
+e catturano caratteristiche specifiche delle immagini. Questi filtri sono in grado di identificare forme, texture, oggetti e altre
+informazioni utili per la classificazione dell’immagine.
+La rete è organizzata in strati, dove ogni strato utilizza i filtri
+per analizzare i dati. I filtri sono condivisi tra i diversi punti
+dell’immagine, che riducono la quantità di parametri che devono
+essere addestrati e migliorano la capacità di generalizzazione del
+modello.
+Oltre ai filtri, sono presenti anche strati di pooling, che riducono
+la dimensione dei dati elaborati e aumentano la robustezza del
+modello. I dati vengono elaborati quindi attraverso una serie di
+strati di convoluzione e pooling, che vengono seguiti da strati
+densi, che forniscono la classificazione o la regressione finale.
+Questo approccio rende molto efficace l’elaborazione delle immagini, poiché rende la rete in grado di catturare relazioni spaziali
+tra i pixel dell’immagine. Queste relazioni spaziali sono importanti
+per la comprensione delle immagini e possono essere utilizzate per
+la classificazione delle immagini in cadute o non cadute.
+La rete ottenuta è di semplice architettura ma risulta altrettanto
+facile da scalare e allenare, risultando quindi molto comoda da
+utilizzare su quantità di dati molto grandi.
 
-<img align="right" src="JustMeet-Frontend/components/images/MAPPA EVENTI.jpeg" height="300">
+<img align="left" src="images/tensorboard.png" height="300">
 
-...
+**TensorFlow** è una libreria open source di intelligenza artificiale sviluppata da Google. È utilizzata per costruire e addestrare modelli di apprendimento automatico e per eseguire operazioni
+matematiche su tensori, che sono array multidimensionali. 
+Uno degli strumenti più utili forniti da Tensorflow è sicuramente
+la sua dashboard, chiamata **TensorBoard**. La TensorBoard è uno
+strumento basato sul Web per la visualizzazione, il monitoraggio
+e il debug delle esecuzioni di TensorFlow. Fornisce informazioni
+in tempo reale sulle tue corse di allenamento, tra cui precisione,
+perdita e altre metriche, oltre a visualizzare e confrontare i risultati di più corse. La dashboard di TensorFlow è anche in grado
+di visualizzare il grafico di calcolo e profilare le operazioni di TensorFlow. Può essere utilizzato in locale o in remoto ed è possibile
+accedervi tramite Colab. Fornisce informazioni in tempo reale
+sulle tue corse di allenamento, tra cui precisione, perdita e altre
+metriche, oltre a visualizzare e confrontare i risultati di più corse.
+L'immagine di Tensorboard affianco evidenzia come entrambi i modelli di visione (frontale e pavimentale) sono stati addestrati sul dataset
+con 15 epoche e hanno raggiunto una precision finale maggiore del 95%.
+
+<img align="right" src="images/predizioni.png" height="300">
+
+Sono stati utilizzati due dataset differenti. Il primo di chiama
+**UR Fall Detection Dataset**, e consiste in 140 video totali
+proposti sia in forma frontale (chiamata "cam0") che pavimentale
+(chiamata "cam1"). In particolare, per entrambe le cam vi sono
+30 sequenze di caduta e 40 sequenze che vengono definite activity
+day living, ovvero eventi quotidiani in cui le persone assumono
+posizioni naturali da non confondere con cadute (es. movimenti
+per sedersi, movimenti in cui ci si china per raccogliere un oggetto
+o stendersi sul letto). Il dataset fornisce anche dati sensoriali
+come quelli relativi all’accelerometro, tuttavia sono stati utilizzati
+soltanto i dati utili per l’approccio camera-based.
+Il secondo dataset è stato usato per estendere i dati del modello frontale e comprende 4 diversi ambienti di esecuzione cadute.
+I quattro ambienti sono: **Casa**, **ufficio**, **sala caffè**, e **aula di lezione**.
+Grazie all’estensione di questo nuovo dataset, la rete acquisisce
+importanti capacità di generalizzazione. Non solo comprende che
+le cadute sono indipendenti dalle caratteristiche dell’ambiente
+in background, ma concepisce diverse modalità e movimenti di
+caduta da persone diverse
+
+<img align="right" src="images/inference_not_fall.jpeg" height="150">
+
+Per concludere, è stato eseguito un test di inferenza tramite il
+modello fallnet su un video personale. 
+
+<img align="right" src="images/inference_fall.jpeg" height="150">
+
+Nelle immagini di seguito
+di mostra come il modello abbia imparato a distinguere lo scenario
+di una caduta da uno di activity day living, come lo star seduti, e uno scenario reale di caduta.
 
 
-# 🧪 Test eseguiti <a name = "test"></a>
 
-Sono stati realizzati un complessivo di 31 test...
-
-
-# 📁 Workflow Iterazioni <a name="workflow"></a>
-
-Il workflow è stato suddiviso in ...
-
-<table style="width:100%">
-  <tr>
-    <th># Iterazione</th>
-    <th>Data di inizio</th> 
-    <th>Data di scadenza</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>08/03/2020</td>
-    <td>22/03/2020</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>23/03/2020</td>
-    <td>05/04/2020</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>6/04/2020</td>
-    <td>19/04/2020</td>
-  </tr>
-   <tr>
-    <td>4</td>
-    <td>20/04/2020</td>
-    <td>03/05/2020</td>
-  </tr>
-</table>
-
-...
-
-# 🎯 Obiettivi futuri <a name = "obiettivi"></a>
-
-Si continuerà con lo sviluppo del sistema ampliando ...
 
 # 🔭 Autore <a name = "autore"></a>
 
